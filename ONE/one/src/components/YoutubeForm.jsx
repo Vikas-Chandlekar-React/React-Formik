@@ -11,12 +11,20 @@ function YoutubeForm() {
       email: "",
       channel: "",
     },
+    onSubmit: (values) => {
+      console.log("Form Submitted! = ", values);
+    },
   });
-  console.log(`🚀 ~ Form values : `, formik.values);
+  // console.log(`🚀 ~ Form values : `, formik.values);
+
+  /** NOTE  : For form submission :
+   *  1. onSubmit={formik.handleSubmit}
+   *  2. onSumbit function in useFormik hook
+   */
 
   return (
     <div>
-      <form>
+      <form onSubmit={formik.handleSubmit}>
         <label htmlFor="name">Name</label>
         <input
           type="text"
@@ -44,7 +52,7 @@ function YoutubeForm() {
           onChange={formik.handleChange}
         />
 
-        <button>Submit</button>
+        <button type="submit">Submit</button>
       </form>
     </div>
   );
