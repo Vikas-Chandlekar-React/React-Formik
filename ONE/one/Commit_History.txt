@@ -18,3 +18,6 @@
 6. Displaying error messages
     Bug : When we type wrong in name textbox all error message displayed.
     YTD LINK : https://www.youtube.com/watch?v=9wNl_7_Xtcg&list=PLC3y8-rFHvwiPmFbtzEWjESkqBVDbdgGu&index=8&ab_channel=Codevolution
+
+7. Visited Fields
+    YTD LINK : https://www.youtube.com/watch?v=GGl__utJ0t0&list=PLC3y8-rFHvwiPmFbtzEWjESkqBVDbdgGu&index=10&ab_channel=Codevolution
