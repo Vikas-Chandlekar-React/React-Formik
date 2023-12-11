@@ -14,3 +14,7 @@
     YTD LINK : 
         https://www.youtube.com/watch?v=tthHwRRGkj0&list=PLC3y8-rFHvwiPmFbtzEWjESkqBVDbdgGu&index=6&ab_channel=Codevolution
         https://www.youtube.com/watch?v=A1VaAsV2HiU&list=PLC3y8-rFHvwiPmFbtzEWjESkqBVDbdgGu&index=7&ab_channel=Codevolution
+
+6. Displaying error messages
+    Bug : When we type wrong in name textbox all error message displayed.
+    YTD LINK : https://www.youtube.com/watch?v=9wNl_7_Xtcg&list=PLC3y8-rFHvwiPmFbtzEWjESkqBVDbdgGu&index=8&ab_channel=Codevolution
