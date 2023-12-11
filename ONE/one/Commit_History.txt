@@ -9,3 +9,8 @@
 
 4. Handling Form Submission
     YTD LINK : https://www.youtube.com/watch?v=DZiltZH1-d0&list=PLC3y8-rFHvwiPmFbtzEWjESkqBVDbdgGu&index=5&ab_channel=Codevolution
+
+5. Form validation and validation function
+    YTD LINK : 
+        https://www.youtube.com/watch?v=tthHwRRGkj0&list=PLC3y8-rFHvwiPmFbtzEWjESkqBVDbdgGu&index=6&ab_channel=Codevolution
+        https://www.youtube.com/watch?v=A1VaAsV2HiU&list=PLC3y8-rFHvwiPmFbtzEWjESkqBVDbdgGu&index=7&ab_channel=Codevolution
