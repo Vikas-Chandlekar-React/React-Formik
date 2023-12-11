@@ -3,3 +3,6 @@
 
 2. Install Formik : npm i formik
     YTD LINK : https://www.youtube.com/watch?v=tEU5k2O5qSU&list=PLC3y8-rFHvwiPmFbtzEWjESkqBVDbdgGu&index=3&ab_channel=Codevolution
+
+3. Managing Form State
+    YTD LINK : https://www.youtube.com/watch?v=c4EdCbk3K1c&list=PLC3y8-rFHvwiPmFbtzEWjESkqBVDbdgGu&index=4&ab_channel=Codevolution
