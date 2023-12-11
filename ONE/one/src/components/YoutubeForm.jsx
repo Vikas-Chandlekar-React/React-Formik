@@ -1,6 +1,10 @@
+import { useFormik } from "formik";
 import React from "react";
 
 function YoutubeForm() {
+  const formik = useFormik({});
+  console.log(`🚀 ~ file: YoutubeForm.jsx:6 ~ YoutubeForm ~ formik:`, formik);
+
   return (
     <div>
       <form>
