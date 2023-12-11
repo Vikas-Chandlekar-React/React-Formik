@@ -21,3 +21,7 @@
 
 7. Visited Fields
     YTD LINK : https://www.youtube.com/watch?v=GGl__utJ0t0&list=PLC3y8-rFHvwiPmFbtzEWjESkqBVDbdgGu&index=10&ab_channel=Codevolution
+
+8. Improving validation UX
+    Resolve Bug at c6 
+    YTD LINK : https://www.youtube.com/watch?v=dWKPkGDe9pw&list=PLC3y8-rFHvwiPmFbtzEWjESkqBVDbdgGu&index=11&ab_channel=Codevolution
