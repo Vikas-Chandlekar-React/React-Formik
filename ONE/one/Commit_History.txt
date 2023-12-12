@@ -30,3 +30,8 @@
     Install : npm i yup
     - yup is alternative and best option of validate function in useFormik hook
     YTD LINK : https://www.youtube.com/watch?v=PpdXB9Ru6oI&list=PLC3y8-rFHvwiPmFbtzEWjESkqBVDbdgGu&index=11&ab_channel=Codevolution
+
+10. Reducing boilerplate
+    - for every input box we repeated value, onBlue, onChange attribute 
+        - solution :  {...formik.getFieldProps("value of name attribute")}
+    YTD LINK : https://www.youtube.com/watch?v=Gcs9cBI2Cw8&list=PLC3y8-rFHvwiPmFbtzEWjESkqBVDbdgGu&index=12&ab_channel=Codevolution
