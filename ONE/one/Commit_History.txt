@@ -50,3 +50,6 @@
 12. ErrorMessage Revisited
     - Different way to display error message using ErrorMessage Component
     YTD LINK : https://www.youtube.com/watch?v=fhd8n8s_tys&list=PLC3y8-rFHvwiPmFbtzEWjESkqBVDbdgGu&index=19&ab_channel=Codevolution
+
+13. Nested Objects
+    YTD LINK : https://www.youtube.com/watch?v=cMBqJo9KeO0&list=PLC3y8-rFHvwiPmFbtzEWjESkqBVDbdgGu&index=20&ab_channel=Codevolution
