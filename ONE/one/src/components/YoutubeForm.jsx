@@ -42,6 +42,10 @@ function YoutubeForm() {
       initialValues={initialValues}
       onSubmit={onSubmit}
       validationSchema={validationSchema}
+      // DESC : Formik not run the validation function onChange event
+      validateOnChange={false}
+      // DESC : Formik not run the validation function onBlur event
+      validateOnBlur={false}
     >
       <Form>
         <div className="form-control">
@@ -143,6 +147,7 @@ function YoutubeForm() {
               const { push, remove, form } = fieldArrayProps;
               const { values } = form;
               const { phNumbers } = values;
+              console.log("form errors = ", form.errors);
               return (
                 <div>
                   {phNumbers.map((phNumber, index) => (
