@@ -35,3 +35,14 @@
     - for every input box we repeated value, onBlue, onChange attribute 
         - solution :  {...formik.getFieldProps("value of name attribute")}
     YTD LINK : https://www.youtube.com/watch?v=Gcs9cBI2Cw8&list=PLC3y8-rFHvwiPmFbtzEWjESkqBVDbdgGu&index=12&ab_channel=Codevolution
+
+11. Formik component
+    - Compare YoutubeForm and OldYoutubeForm1 : see code clean and readable and reduce code using Formik Component
+    YTD LINK : 
+        - https://www.youtube.com/watch?v=8vpQvZ7RZgI&list=PLC3y8-rFHvwiPmFbtzEWjESkqBVDbdgGu&index=13&ab_channel=Codevolution
+        - https://www.youtube.com/watch?v=xPbSne94724&list=PLC3y8-rFHvwiPmFbtzEWjESkqBVDbdgGu&index=14&ab_channel=Codevolution
+        - https://www.youtube.com/watch?v=THREPzYbFtE&list=PLC3y8-rFHvwiPmFbtzEWjESkqBVDbdgGu&index=15&ab_channel=Codevolution
+        - https://www.youtube.com/watch?v=rBOJzbFZAws&list=PLC3y8-rFHvwiPmFbtzEWjESkqBVDbdgGu&index=16&ab_channel=Codevolution
+
+    - Field Revisited & Render prop pattern
+    YTD LINK : https://www.youtube.com/watch?v=TOPYgxjh9lk&list=PLC3y8-rFHvwiPmFbtzEWjESkqBVDbdgGu&index=18&ab_channel=Codevolution
