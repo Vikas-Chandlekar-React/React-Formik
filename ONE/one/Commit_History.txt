@@ -25,3 +25,8 @@
 8. Improving validation UX
     Resolve Bug at c6 
     YTD LINK : https://www.youtube.com/watch?v=dWKPkGDe9pw&list=PLC3y8-rFHvwiPmFbtzEWjESkqBVDbdgGu&index=11&ab_channel=Codevolution
+
+9. Schema validation with Yup
+    Install : npm i yup
+    - yup is alternative and best option of validate function in useFormik hook
+    YTD LINK : https://www.youtube.com/watch?v=PpdXB9Ru6oI&list=PLC3y8-rFHvwiPmFbtzEWjESkqBVDbdgGu&index=11&ab_channel=Codevolution
