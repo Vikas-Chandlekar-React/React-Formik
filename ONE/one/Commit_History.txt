@@ -46,3 +46,7 @@
 
     - Field Revisited & Render prop pattern
     YTD LINK : https://www.youtube.com/watch?v=TOPYgxjh9lk&list=PLC3y8-rFHvwiPmFbtzEWjESkqBVDbdgGu&index=18&ab_channel=Codevolution
+
+12. ErrorMessage Revisited
+    - Different way to display error message using ErrorMessage Component
+    YTD LINK : https://www.youtube.com/watch?v=fhd8n8s_tys&list=PLC3y8-rFHvwiPmFbtzEWjESkqBVDbdgGu&index=19&ab_channel=Codevolution

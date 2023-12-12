@@ -1,6 +1,7 @@
 import { ErrorMessage, Field, Form, Formik } from "formik";
 import React from "react";
 import * as Yup from "yup";
+import TextError from "./TextError";
 
 const initialValues = {
   name: "",
@@ -33,7 +34,13 @@ function YoutubeForm() {
         <div className="form-control">
           <label htmlFor="name">Name</label>
           <Field type="text" id="name" name="name" placeholder="Enter name" />
-          <ErrorMessage name="name" />
+          {/* TOPIC : 1st way to display error message */}
+          {/* POINT : It display only error message without any div */}
+          {/* <ErrorMessage name="name" /> */}
+          {/* POINT : It display only error message wrap inside div */}
+          {/* <ErrorMessage name="name" component={"div"} /> */}
+          {/* POINT : It display only error message wrap inside custom Component */}
+          <ErrorMessage name="name" component={TextError} />
         </div>
 
         <div className="form-control">
@@ -44,7 +51,14 @@ function YoutubeForm() {
             name="email"
             placeholder="Enter email"
           />
-          <ErrorMessage name="email" />
+          {/* <ErrorMessage name="email" /> */}
+
+          {/* TOPIC : 2nd way to display error message using Render props pattern */}
+          <ErrorMessage name="email">
+            {(errorMsg) => {
+              return <div className="error">{errorMsg}</div>;
+            }}
+          </ErrorMessage>
         </div>
 
         <div className="form-control">
