@@ -67,3 +67,6 @@
 17. When does validation run
     - On Page Load, onChange, onBlur, Attempt to Submit form
     YTD LINK : https://www.youtube.com/watch?v=MZJ8dcYzH1Y&list=PLC3y8-rFHvwiPmFbtzEWjESkqBVDbdgGu&index=24&ab_channel=Codevolution
+
+18. Field Level Validation 
+    YTD LINK : https://www.youtube.com/watch?v=5gqUTpJrfO0&list=PLC3y8-rFHvwiPmFbtzEWjESkqBVDbdgGu&index=25&ab_channel=Codevolution

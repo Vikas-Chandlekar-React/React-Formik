@@ -34,6 +34,14 @@ const validationSchema = Yup.object({
   channel: Yup.string().required("Required!"),
 });
 
+const validateComment = (value) => {
+  let error;
+  if (!value) {
+    error = "Please provide your comment.";
+  }
+  return error;
+};
+
 function YoutubeForm() {
   console.log("YoutubeForm Re-render");
 
@@ -43,9 +51,9 @@ function YoutubeForm() {
       onSubmit={onSubmit}
       validationSchema={validationSchema}
       // DESC : Formik not run the validation function onChange event
-      validateOnChange={false}
+      // validateOnChange={false}
       // DESC : Formik not run the validation function onBlur event
-      validateOnBlur={false}
+      // validateOnBlur={false}
     >
       <Form>
         <div className="form-control">
@@ -97,7 +105,9 @@ function YoutubeForm() {
             id="comments"
             name="comments"
             placeholder="Enter comment"
+            validate={validateComment}
           />
+          <ErrorMessage name="comments" component={TextError} />
         </div>
 
         {/* POINT : Render prop pattern */}
