@@ -60,3 +60,6 @@
 15. FieldArray component
     - Here, example of dynamic add multiple phone number
     YTD LINK : https://www.youtube.com/watch?v=DYcqatriSNE&list=PLC3y8-rFHvwiPmFbtzEWjESkqBVDbdgGu&index=23&ab_channel=Codevolution
+
+16. FastField Component 
+    YTD LINK : https://www.youtube.com/watch?v=xMc5w3Gdzyw&list=PLC3y8-rFHvwiPmFbtzEWjESkqBVDbdgGu&index=23&ab_channel=Codevolution
