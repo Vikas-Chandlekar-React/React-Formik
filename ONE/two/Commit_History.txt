@@ -3,3 +3,6 @@
 
 25. FormikControl Component
     YTD LINK : https://www.youtube.com/watch?v=4LJ0IXB0Arw&list=PLC3y8-rFHvwiPmFbtzEWjESkqBVDbdgGu&index=33&ab_channel=Codevolution
+
+26. Input
+    YTD LINK : https://www.youtube.com/watch?v=zmMJ5DEdz-4&list=PLC3y8-rFHvwiPmFbtzEWjESkqBVDbdgGu&index=33&ab_channel=Codevolution
