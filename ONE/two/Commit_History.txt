@@ -6,3 +6,6 @@
 
 26. Input
     YTD LINK : https://www.youtube.com/watch?v=zmMJ5DEdz-4&list=PLC3y8-rFHvwiPmFbtzEWjESkqBVDbdgGu&index=33&ab_channel=Codevolution
+
+27. Textarea 
+    YTD LINK : https://www.youtube.com/watch?v=0NW7UFD46mU&list=PLC3y8-rFHvwiPmFbtzEWjESkqBVDbdgGu&index=34&ab_channel=Codevolution
