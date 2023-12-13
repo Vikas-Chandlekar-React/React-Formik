@@ -6,9 +6,23 @@ import {
   FieldArray,
   FastField,
 } from "formik";
-import React from "react";
+import React, { useState } from "react";
 import * as Yup from "yup";
 import TextError from "./TextError";
+
+const savedData = {
+  name: "raju",
+  email: "raju@gamil.com",
+  channel: "T series",
+  comments: "Formik series",
+  address: "Goa",
+  social: {
+    facebook: "",
+    twitter: "",
+  },
+  phoneNumbers: ["", ""],
+  phNumbers: [""],
+};
 
 const initialValues = {
   name: "",
@@ -49,12 +63,14 @@ const validateComment = (value) => {
 
 function YoutubeForm() {
   console.log("YoutubeForm Re-render");
+  const [formValues, setFormValues] = useState(null);
 
   return (
     <Formik
-      initialValues={initialValues}
+      initialValues={formValues || initialValues}
       onSubmit={onSubmit}
       validationSchema={validationSchema}
+      enableReinitialize
       // DESC : Formik not run the validation function onChange event  (by default true)
       // validateOnChange={false}
       // DESC : Formik not run the validation function onBlur event  (by default true)
@@ -258,6 +274,11 @@ function YoutubeForm() {
               }
             >
               Visit All Fields
+            </button>
+
+            <br />
+            <button type="button" onClick={() => setFormValues(savedData)}>
+              Load Saved Data
             </button>
           </Form>
         );

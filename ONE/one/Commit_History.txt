@@ -79,3 +79,6 @@
 
 21. Disabling Submit (Part 2) : Form submission in progress 
     YTD LINK : https://www.youtube.com/watch?v=pk_QnEwDVD8&list=PLC3y8-rFHvwiPmFbtzEWjESkqBVDbdgGu&index=28&ab_channel=Codevolution
+
+22. Load Saved Data
+    YTD LINK : https://www.youtube.com/watch?v=awCY7qnbkIA&list=PLC3y8-rFHvwiPmFbtzEWjESkqBVDbdgGu&index=29&ab_channel=Codevolution
