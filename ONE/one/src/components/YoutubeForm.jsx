@@ -50,10 +50,12 @@ function YoutubeForm() {
       initialValues={initialValues}
       onSubmit={onSubmit}
       validationSchema={validationSchema}
-      // DESC : Formik not run the validation function onChange event
+      // DESC : Formik not run the validation function onChange event  (by default true)
       // validateOnChange={false}
-      // DESC : Formik not run the validation function onBlur event
+      // DESC : Formik not run the validation function onBlur event  (by default true)
       // validateOnBlur={false}
+      // DESC : Formik run the validation function on page load event (by default false)
+      validateOnMount
     >
       {(formik) => {
         console.log("Formik props = ", formik);
@@ -194,7 +196,17 @@ function YoutubeForm() {
               </FieldArray>
             </div>
 
-            <button type="submit">Submit</button>
+            {/* <button type="submit">Submit</button> */}
+            {/* DESC : Scenario 1 :
+                - on page load button is not disabled because isValid is true (erors object is empty)
+                - after clicked on submit button error message display on UI. and then Submit button disabled.
+            */}
+            {/* DESC : If client want button must be disabled on page load then you must do following
+                  - 
+             */}
+            <button type="submit" disabled={!formik.isValid}>
+              Submit
+            </button>
             <br />
             {/* DESC : When we clicked on this 2 below buttons errors object are field with error but touched 
                        Object is empty. Hence, error message is not display because the field must be touched (touched object is empty)

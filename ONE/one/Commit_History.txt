@@ -73,3 +73,6 @@
 
 19. Manually triggering validation
     YTD LINK : https://www.youtube.com/watch?v=0TFIBPyitXo&list=PLC3y8-rFHvwiPmFbtzEWjESkqBVDbdgGu&index=26&ab_channel=Codevolution
+
+20. Disabling Submit (Part 1)
+    YTD LINK : https://www.youtube.com/watch?v=F69AlPc0O8o&list=PLC3y8-rFHvwiPmFbtzEWjESkqBVDbdgGu&index=27&ab_channel=Codevolution
