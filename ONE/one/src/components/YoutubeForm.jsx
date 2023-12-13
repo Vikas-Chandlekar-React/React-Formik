@@ -45,6 +45,8 @@ const onSubmit = async (values, onSubmitProps) => {
   // FAKE delay 5 seconds
   await new Promise((resolve) => setTimeout(resolve, 5000));
   onSubmitProps.setSubmitting(false);
+  // POINT : Scenario 2 : After submitting form and API response
+  onSubmitProps.resetForm();
 };
 
 const validationSchema = Yup.object({
@@ -280,6 +282,10 @@ function YoutubeForm() {
             <button type="button" onClick={() => setFormValues(savedData)}>
               Load Saved Data
             </button>
+
+            {/* TOPIC : Reset form */}
+            {/* POINT : Scenario 1 : Dedicated reset button */}
+            <button type="reset">Reset</button>
           </Form>
         );
       }}
