@@ -24,8 +24,13 @@ const initialValues = {
   phNumbers: [""],
 };
 
-const onSubmit = (values) => {
+const onSubmit = async (values, onSubmitProps) => {
   console.log("Form Submitted! = ", values);
+  console.log("onSubmit Props = ", onSubmitProps);
+  // enabled submit button after api response in real world
+  // FAKE delay 5 seconds
+  await new Promise((resolve) => setTimeout(resolve, 5000));
+  onSubmitProps.setSubmitting(false);
 };
 
 const validationSchema = Yup.object({
@@ -55,7 +60,7 @@ function YoutubeForm() {
       // DESC : Formik not run the validation function onBlur event  (by default true)
       // validateOnBlur={false}
       // DESC : Formik run the validation function on page load event (by default false)
-      validateOnMount
+      // validateOnMount
     >
       {(formik) => {
         console.log("Formik props = ", formik);
@@ -204,9 +209,17 @@ function YoutubeForm() {
             {/* DESC : If client want button must be disabled on page load then you must do following
                   - 
              */}
-            <button type="submit" disabled={!formik.isValid}>
+            {/* <button type="submit" disabled={!formik.isValid}>
+              Submit
+            </button> */}
+            {/* DESC : Disable button when form is submitting or when validation error occurs */}
+            <button
+              type="submit"
+              disabled={!formik.isValid || formik.isSubmitting}
+            >
               Submit
             </button>
+
             <br />
             {/* DESC : When we clicked on this 2 below buttons errors object are field with error but touched 
                        Object is empty. Hence, error message is not display because the field must be touched (touched object is empty)

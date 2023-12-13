@@ -76,3 +76,6 @@
 
 20. Disabling Submit (Part 1)
     YTD LINK : https://www.youtube.com/watch?v=F69AlPc0O8o&list=PLC3y8-rFHvwiPmFbtzEWjESkqBVDbdgGu&index=27&ab_channel=Codevolution
+
+21. Disabling Submit (Part 2) : Form submission in progress 
+    YTD LINK : https://www.youtube.com/watch?v=pk_QnEwDVD8&list=PLC3y8-rFHvwiPmFbtzEWjESkqBVDbdgGu&index=28&ab_channel=Codevolution
