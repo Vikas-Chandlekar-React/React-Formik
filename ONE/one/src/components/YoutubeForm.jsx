@@ -55,134 +55,188 @@ function YoutubeForm() {
       // DESC : Formik not run the validation function onBlur event
       // validateOnBlur={false}
     >
-      <Form>
-        <div className="form-control">
-          <label htmlFor="name">Name</label>
-          <Field type="text" id="name" name="name" placeholder="Enter name" />
-          {/* TOPIC : 1st way to display error message */}
-          {/* POINT : It display only error message without any div */}
-          {/* <ErrorMessage name="name" /> */}
-          {/* POINT : It display only error message wrap inside div */}
-          {/* <ErrorMessage name="name" component={"div"} /> */}
-          {/* POINT : It display only error message wrap inside custom Component */}
-          <ErrorMessage name="name" component={TextError} />
-        </div>
+      {(formik) => {
+        console.log("Formik props = ", formik);
 
-        <div className="form-control">
-          <label htmlFor="email">E-mail</label>
-          <Field
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Enter email"
-          />
-          {/* <ErrorMessage name="email" /> */}
+        return (
+          <Form>
+            <div className="form-control">
+              <label htmlFor="name">Name</label>
+              <Field
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter name"
+              />
+              {/* TOPIC : 1st way to display error message */}
+              {/* POINT : It display only error message without any div */}
+              {/* <ErrorMessage name="name" /> */}
+              {/* POINT : It display only error message wrap inside div */}
+              {/* <ErrorMessage name="name" component={"div"} /> */}
+              {/* POINT : It display only error message wrap inside custom Component */}
+              <ErrorMessage name="name" component={TextError} />
+            </div>
 
-          {/* TOPIC : 2nd way to display error message using Render props pattern */}
-          <ErrorMessage name="email">
-            {(errorMsg) => {
-              return <div className="error">{errorMsg}</div>;
-            }}
-          </ErrorMessage>
-        </div>
+            <div className="form-control">
+              <label htmlFor="email">E-mail</label>
+              <Field
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter email"
+              />
+              {/* <ErrorMessage name="email" /> */}
 
-        <div className="form-control">
-          <label htmlFor="channel">Channel</label>
-          <Field
-            type="text"
-            id="channel"
-            name="channel"
-            placeholder="Enter channel"
-          />
-          <ErrorMessage name="channel" />
-        </div>
+              {/* TOPIC : 2nd way to display error message using Render props pattern */}
+              <ErrorMessage name="email">
+                {(errorMsg) => {
+                  return <div className="error">{errorMsg}</div>;
+                }}
+              </ErrorMessage>
+            </div>
 
-        <div className="form-control">
-          <label htmlFor="comments">Comments</label>
-          {/* POINT : Add textarea you can use attribute as / component (deprecated) */}
-          <Field
-            as="textarea"
-            id="comments"
-            name="comments"
-            placeholder="Enter comment"
-            validate={validateComment}
-          />
-          <ErrorMessage name="comments" component={TextError} />
-        </div>
+            <div className="form-control">
+              <label htmlFor="channel">Channel</label>
+              <Field
+                type="text"
+                id="channel"
+                name="channel"
+                placeholder="Enter channel"
+              />
+              <ErrorMessage name="channel" />
+            </div>
 
-        {/* POINT : Render prop pattern */}
-        <div className="form-control">
-          <label htmlFor="address">Address</label>
-          <FastField name="address">
-            {(props) => {
-              const { field, form, meta } = props;
-              console.log("Render props = ", props);
-              return (
-                <div>
-                  <input type="text" id="address" {...field} />
-                  {meta.touched && meta.error ? <div>{meta.error}</div> : null}
-                </div>
-              );
-            }}
-          </FastField>
-        </div>
+            <div className="form-control">
+              <label htmlFor="comments">Comments</label>
+              {/* POINT : Add textarea you can use attribute as / component (deprecated) */}
+              <Field
+                as="textarea"
+                id="comments"
+                name="comments"
+                placeholder="Enter comment"
+                validate={validateComment}
+              />
+              <ErrorMessage name="comments" component={TextError} />
+            </div>
 
-        <div className="form-control">
-          <label htmlFor="facebook">Facebook Profile</label>
-          <Field type="text" id="facebook" name="social.facebook" />
-        </div>
-
-        <div className="form-control">
-          <label htmlFor="twitter">Twitter Profile</label>
-          <Field type="text" id="twitter" name="social.twitter" />
-        </div>
-
-        <div className="form-control">
-          <label htmlFor="primaryph">Primary phone number</label>
-          <Field type="text" id="primaryph" name="phoneNumbers[0]" />
-        </div>
-
-        <div className="form-control">
-          <label htmlFor="secondaryph">Secondary phone number</label>
-          <Field type="text" id="secondaryph" name="phoneNumbers[1]" />
-        </div>
-
-        <div className="form-control">
-          <label htmlFor="phNumbers">List of phone numbers</label>
-          <FieldArray name="phNumbers">
-            {(fieldArrayProps) => {
-              {
-                /* console.log("Field array render", fieldArrayProps); */
-              }
-              const { push, remove, form } = fieldArrayProps;
-              const { values } = form;
-              const { phNumbers } = values;
-              console.log("form errors = ", form.errors);
-              return (
-                <div>
-                  {phNumbers.map((phNumber, index) => (
-                    <div key={index}>
-                      <Field name={`phNumbers[${index}]`} />
-                      {index > 0 && (
-                        <button type="button" onClick={() => remove(index)}>
-                          {" "}
-                          -{" "}
-                        </button>
-                      )}
-                      <button type="button" onClick={() => push("")}>
-                        {" "}
-                        +{" "}
-                      </button>
+            {/* POINT : Render prop pattern */}
+            <div className="form-control">
+              <label htmlFor="address">Address</label>
+              <FastField name="address">
+                {(props) => {
+                  const { field, form, meta } = props;
+                  console.log("Render props = ", props);
+                  return (
+                    <div>
+                      <input type="text" id="address" {...field} />
+                      {meta.touched && meta.error ? (
+                        <div>{meta.error}</div>
+                      ) : null}
                     </div>
-                  ))}
-                </div>
-              );
-            }}
-          </FieldArray>
-        </div>
+                  );
+                }}
+              </FastField>
+            </div>
 
-        <button type="submit">Submit</button>
-      </Form>
+            <div className="form-control">
+              <label htmlFor="facebook">Facebook Profile</label>
+              <Field type="text" id="facebook" name="social.facebook" />
+            </div>
+
+            <div className="form-control">
+              <label htmlFor="twitter">Twitter Profile</label>
+              <Field type="text" id="twitter" name="social.twitter" />
+            </div>
+
+            <div className="form-control">
+              <label htmlFor="primaryph">Primary phone number</label>
+              <Field type="text" id="primaryph" name="phoneNumbers[0]" />
+            </div>
+
+            <div className="form-control">
+              <label htmlFor="secondaryph">Secondary phone number</label>
+              <Field type="text" id="secondaryph" name="phoneNumbers[1]" />
+            </div>
+
+            <div className="form-control">
+              <label htmlFor="phNumbers">List of phone numbers</label>
+              <FieldArray name="phNumbers">
+                {(fieldArrayProps) => {
+                  {
+                    /* console.log("Field array render", fieldArrayProps); */
+                  }
+                  const { push, remove, form } = fieldArrayProps;
+                  const { values } = form;
+                  const { phNumbers } = values;
+                  {
+                    /* console.log("form errors = ", form.errors); */
+                  }
+                  return (
+                    <div>
+                      {phNumbers.map((phNumber, index) => (
+                        <div key={index}>
+                          <Field name={`phNumbers[${index}]`} />
+                          {index > 0 && (
+                            <button type="button" onClick={() => remove(index)}>
+                              {" "}
+                              -{" "}
+                            </button>
+                          )}
+                          <button type="button" onClick={() => push("")}>
+                            {" "}
+                            +{" "}
+                          </button>
+                        </div>
+                      ))}
+                    </div>
+                  );
+                }}
+              </FieldArray>
+            </div>
+
+            <button type="submit">Submit</button>
+            <br />
+            {/* DESC : When we clicked on this 2 below buttons errors object are field with error but touched 
+                       Object is empty. Hence, error message is not display because the field must be touched (touched object is empty)
+                       PROBLEM : (1)
+                        */}
+            <button
+              type="button"
+              onClick={() => formik.validateField("comments")}
+            >
+              Validate Comments
+            </button>
+            <button type="button" onClick={() => formik.validateForm()}>
+              Validate All
+            </button>
+            <br />
+            {/* DESC : When we clicked on this 2 below buttons error message display on UI. touched object is filled.App
+                       - setFieldTouhced : for particular field
+                       - setTouhced : for multiple fields
+                       SOLUTION : (1)
+             */}
+            <button
+              type="button"
+              onClick={() => formik.setFieldTouched("comments")}
+            >
+              Visit Comments
+            </button>
+            <button
+              type="button"
+              onClick={() =>
+                formik.setTouched({
+                  name: true,
+                  email: true,
+                  comments: true,
+                  channel: true,
+                })
+              }
+            >
+              Visit All Fields
+            </button>
+          </Form>
+        );
+      }}
     </Formik>
   );
 }

@@ -70,3 +70,6 @@
 
 18. Field Level Validation 
     YTD LINK : https://www.youtube.com/watch?v=5gqUTpJrfO0&list=PLC3y8-rFHvwiPmFbtzEWjESkqBVDbdgGu&index=25&ab_channel=Codevolution
+
+19. Manually triggering validation
+    YTD LINK : https://www.youtube.com/watch?v=0TFIBPyitXo&list=PLC3y8-rFHvwiPmFbtzEWjESkqBVDbdgGu&index=26&ab_channel=Codevolution
