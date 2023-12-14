@@ -9,3 +9,6 @@
 
 27. Textarea 
     YTD LINK : https://www.youtube.com/watch?v=0NW7UFD46mU&list=PLC3y8-rFHvwiPmFbtzEWjESkqBVDbdgGu&index=34&ab_channel=Codevolution
+
+28. Select
+    YTD LINK : https://www.youtube.com/watch?v=83TejqrvwJM&list=PLC3y8-rFHvwiPmFbtzEWjESkqBVDbdgGu&index=35&ab_channel=Codevolution
