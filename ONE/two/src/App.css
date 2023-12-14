@@ -9,8 +9,14 @@ label {
   margin-bottom: 5px;
 }
 
-input[type="text"],
-input[type="email"],
+input + label {
+  font-weight: bold;
+  display: inline-flex;
+  margin-right: 20px;
+}
+
+input[type='text'],
+input[type='email'],
 textarea,
 select {
   display: block;
