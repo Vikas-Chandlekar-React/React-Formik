@@ -15,3 +15,6 @@
 
 29. Radio Buttons 
     YTD LINK : https://www.youtube.com/watch?v=-cdJLeu7CRA&list=PLC3y8-rFHvwiPmFbtzEWjESkqBVDbdgGu&index=36&ab_channel=Codevolution
+
+30. Checkbox Group
+    YTD LINK : https://www.youtube.com/watch?v=rM7qbHwEGVA&list=PLC3y8-rFHvwiPmFbtzEWjESkqBVDbdgGu&index=37&ab_channel=Codevolution
