@@ -13,9 +13,9 @@ function App() {
     <ChakraProvider theme={chakraTheme}>
       <div className="App">
         {/* <FormikContainer /> */}
-        {/* <LoginForm /> */}
+        <LoginForm />
         {/* <RegistrationForm /> */}
-        <EnrollmentForm />
+        {/* <EnrollmentForm /> */}
       </div>
     </ChakraProvider>
   );
