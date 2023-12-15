@@ -32,3 +32,7 @@
 
 34. Course Enrollment Form
     YTD LINK : https://www.youtube.com/watch?v=l73kPdY1juk&list=PLC3y8-rFHvwiPmFbtzEWjESkqBVDbdgGu&index=41&ab_channel=Codevolution
+
+35. Install and Setup Chakra UI 
+    - npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion
+    YTD LINK : https://www.youtube.com/watch?v=zBWeaIaUqbg&list=PLC3y8-rFHvwiPmFbtzEWjESkqBVDbdgGu&index=42&ab_channel=Codevolution
