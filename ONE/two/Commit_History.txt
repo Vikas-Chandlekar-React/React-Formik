@@ -18,3 +18,8 @@
 
 30. Checkbox Group
     YTD LINK : https://www.youtube.com/watch?v=rM7qbHwEGVA&list=PLC3y8-rFHvwiPmFbtzEWjESkqBVDbdgGu&index=37&ab_channel=Codevolution
+
+31. Date Picker
+    - npm i react-datepicker
+    - bug fix at CheckboxGroup
+    YTD LINK : https://www.youtube.com/watch?v=2R3hiZfhfU8&list=PLC3y8-rFHvwiPmFbtzEWjESkqBVDbdgGu&index=38&ab_channel=Codevolution

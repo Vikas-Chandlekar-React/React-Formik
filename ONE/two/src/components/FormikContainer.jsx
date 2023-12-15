@@ -17,9 +17,9 @@ const radioOptions = [
 ];
 
 const checkboxOptions = [
-  { key: "Option 1", value: "coption1" },
-  { key: "Option 2", value: "coption2" },
-  { key: "Option 3", value: "coption3" },
+  { key: "Option 1", value: "cOption1" },
+  { key: "Option 2", value: "cOption2" },
+  { key: "Option 3", value: "cOption3" },
 ];
 
 const initialValues = {
@@ -27,7 +27,14 @@ const initialValues = {
   description: "",
   selectOption: "",
   radioOption: "",
-  checkboxOption: "",
+  checkboxOption: [],
+  birthDate: null,
+  /** SOLUTION : Let assume, data from API or third party not passed as date as string
+   *    e.g. "2023-12-14T18:30:00.000Z"
+   *  if they pass as string
+   *    then use parse date means (new Date(stringDate))
+   */
+  // birthDate: new Date("2023-12-14T18:30:00.000Z"),
 };
 
 const validationSchema = Yup.object({
@@ -35,12 +42,18 @@ const validationSchema = Yup.object({
   description: Yup.string().required("Required!"),
   selectOption: Yup.string().required("Required!"),
   radioOption: Yup.string().required("Required!"),
-  checkboxOption: Yup.array().required("Reqruied!"),
+  checkboxOption: Yup.array().min(1, "At least one option is required"),
+  birthDate: Yup.date().required("Required!"),
 });
 
 const onSubmit = (values) => {
   console.log("Form Submitted");
   console.log("Form Data = ", values);
+  /** DESC :
+        - In above line, birthDate as Date Object
+        - In below line, birthDate as String
+  */
+  console.log("Saved Data = ", JSON.parse(JSON.stringify(values)));
 };
 
 function FormikContainer() {
@@ -82,9 +95,15 @@ function FormikContainer() {
 
             <FormikControl
               control="checkbox"
-              label="Checkbox Topics"
+              label="Checkbox topics"
               name="checkboxOption"
               options={checkboxOptions}
+            />
+
+            <FormikControl
+              control="date"
+              label="Pick a date"
+              name="birthDate"
             />
 
             <button type="submit">Submit</button>
