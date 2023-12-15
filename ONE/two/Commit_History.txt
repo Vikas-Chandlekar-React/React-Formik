@@ -26,3 +26,6 @@
 
 32. Login Form 
     YTD LINK : https://www.youtube.com/watch?v=y3Z1SRV54hI&list=PLC3y8-rFHvwiPmFbtzEWjESkqBVDbdgGu&index=39&ab_channel=Codevolution
+
+33. Registration Form 
+    YTD LINK : https://www.youtube.com/watch?v=yTQcsmagl1I&list=PLC3y8-rFHvwiPmFbtzEWjESkqBVDbdgGu&index=40&ab_channel=Codevolution
